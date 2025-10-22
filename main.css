@@ -83,10 +83,18 @@ h1 {
   position: fixed;
   bottom: 15px;
   left: 15px;
-  width: 120px;
+  width: 100px;
   height: auto;
   z-index: 9999;
   pointer-events: none;
+}
+.fixed-image {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
 }
 @media (max-width: 768px) {
   h1 {
