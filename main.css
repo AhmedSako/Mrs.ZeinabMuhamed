@@ -92,12 +92,19 @@ h1 {
   position: fixed;
   bottom: 15px;
   left: 15px;
-  width: 80px;
+  width: 100px;
   height: auto;
   z-index: 9999;
   pointer-events: none;
 }
-
+.fixed-image {
+  position: fixed;
+  bottom: 20px;   /* المسافة من أسفل */
+  right: 20px;    /* المسافة من اليمين */
+  width: 100px;   /* حجم الصورة */
+  height: auto;   /* الحفاظ على النسبة */
+  z-index: 1000;  /* عشان تبقى فوق العناصر التانية */
+}
 /* 📱 تنسيق الشاشات الصغيرة */
 @media (max-width: 768px) {
   h1 {
