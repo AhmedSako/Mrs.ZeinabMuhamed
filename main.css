@@ -109,12 +109,12 @@ h1 {
   .lp img,
   .Tk img,
   .tg img {
-    width: 150px; /* تصغير الصور للموبايل */
+    width: 180px; /* تصغير الصور للموبايل */
     padding: 8px;
   }
 
   .corner-gif {
-    width: 60px;
+    width: 100px;
     bottom: 10px;
     left: 10px;
   }
@@ -131,7 +131,7 @@ h1 {
   .lp img,
   .Tk img,
   .tg img {
-    width: 100px;
+    width: 190px;
     margin: 5px;
   }
 }
