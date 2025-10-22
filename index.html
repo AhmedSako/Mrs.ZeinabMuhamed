@@ -17,24 +17,18 @@
     <div class="lp"><a href="https://zeinab-muhammed.lms-r.com/"><img src="./imgs/E-learning Platform.png" alt="Platform" width="250px"></a></div>
     <div class="Tk"><a href="https://www.tiktok.com/@mrs.zeinabmuhamed?_t=ZS-8ygZicL3fUe&_r=1"><img src="./imgs/tiktok.png" alt="Tiktok" width="250px"></a></div>
     <div class="tg"><a href="https://t.me/MrsZeinabMuhamed_bot"><img src="./imgs/Telegram.png" alt="Tiktok" width="250px"></a></div>
+    <div class="wh"><a href="https://api.whatsapp.com/send/?phone=201157857692&text&type=phone_number&app_absent=0"><img src="./imgs/whatsapp.png" alt="whatsapp" width="250px"></a></div>
     <script>
-  // نمنع الفتح الفوري
   document.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function(event) {
-      event.preventDefault(); // يمنع الفتح مباشرة
-
-      const href = this.href; // نخزن الرابط الأصلي
-
-      // ممكن تعرض رسالة للمستخدم
+      event.preventDefault();
+      const href = this.href;
       console.log("جاري فتح الرابط بعد 3 ثواني...");
-
-      // بعد 3 ثواني يفتح الرابط
       setTimeout(() => {
         window.location.href = href;
       }, 1000);
     });
   });
 </script>
-  <a href="https://api.whatsapp.com/send/?phone=201157857692&text&type=phone_number&app_absent=0"><img src="./imgs/WhatsApp-Icon-2020-unscreen.gif" class="fixed-image"></a>
 </body>
 </html>
