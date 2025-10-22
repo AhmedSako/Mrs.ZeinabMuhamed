@@ -1,0 +1,137 @@
+/* 🎨 ألوان المشروع */
+:root {
+  --main-color: #253d60;
+  --accent-color: #FF7F50;
+}
+
+/* 🧱 إعدادات عامة */
+body {
+  background-color: var(--main-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🖼️ اللوجو */
+.logo {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* 🏷️ العنوان */
+h1 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+/* 🧩 الحاويات العامة */
+.banner, .yt, .fc, .lp, .Tk, .tg {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* يخليها تنزل تحت في الشاشات الصغيرة */
+  gap: 15px;
+}
+
+/* 🖼️ الصور العامة */
+.yt img,
+.fc img,
+.lp img,
+.Tk img,
+.tg img {
+  background-color: aliceblue;
+  display: block;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  padding: 10px;
+  margin: 10px;
+  width: 180px;       /* حجم مناسب للموبايل */
+  height: auto;
+  max-width: 100%;
+}
+
+/* 🎬 تأثيرات hover */
+.yt img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(230, 57, 70, 0.9);
+  background-color: #c56666;
+}
+
+.fc img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px #0865ff;
+  background-color: #649fff;
+}
+
+.lp img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px #0dafb9;
+  background-color: rgba(56, 169, 175, 0.45);
+}
+
+.Tk img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px #000000;
+  background-color: rgb(63, 63, 63);
+}
+
+.tg img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px #3fa9e3;
+  background-color: #8fc5e2;
+}
+
+/* 🌀 الصورة الثابتة (GIF) */
+.corner-gif {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  width: 80px;
+  height: auto;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* 📱 تنسيق الشاشات الصغيرة */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .yt img,
+  .fc img,
+  .lp img,
+  .Tk img,
+  .tg img {
+    width: 150px; /* تصغير الصور للموبايل */
+    padding: 8px;
+  }
+
+  .corner-gif {
+    width: 60px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+/* 📱📱 للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .yt img,
+  .fc img,
+  .lp img,
+  .Tk img,
+  .tg img {
+    width: 100px;
+    margin: 5px;
+  }
+}
